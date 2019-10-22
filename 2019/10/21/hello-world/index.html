@@ -6,13 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wecret.github.io">
-  <title>Hello World | Hexo</title>
+  <title>Hello World | secret</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="keywords" content="java,redis,ngnix">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http:&#x2F;&#x2F;wecret.github.io&#x2F;2019&#x2F;10&#x2F;21&#x2F;hello-world&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="secret">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-10-21T13:49:58.718Z">
@@ -49,6 +50,8 @@
 		  <h1 class="header-author"><a href="/">secret</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">从代码的全世界路过</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -57,7 +60,11 @@
 	        
 				<li><a href="/archives/index.html">归档</a></li>
 	        
-				<li><a href="/about">关于</a></li>
+				<li><a href="/categories">分类</a></li>
+	        
+				<li><a href="/archives/">时间轴</a></li>
+	        
+				<li><a href="/about/">关于</a></li>
 	        
 			</ul>
 		</nav>
@@ -107,7 +114,13 @@
 			  <h1 class="header-author js-header-author">secret</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>从代码的全世界路过<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
+			
+				
 			
 				
 			
@@ -133,11 +146,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 20%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/about">关于</a></li>
+					<li style="width: 20%"><a href="/categories">分类</a></li>
+		        
+					<li style="width: 20%"><a href="/archives/">时间轴</a></li>
+		        
+					<li style="width: 20%"><a href="/about/">关于</a></li>
 		        
 				</ul>
 			</nav>
@@ -268,6 +285,15 @@
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
         
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
         
         <div class="toc-container tooltip-left">
             <i class="icon-font icon-category"></i>
@@ -360,7 +386,7 @@ gitalk.render('gitalk-container')
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -494,6 +520,8 @@ MathJax.Hub.Queue(function() {
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;ul&gt; &lt;li&gt;人生苦短，我用 Python！&lt;/li&gt; &lt;li&gt;简单高效我学C&lt;/li&gt; &lt;li&gt;优雅强大,必须Qt&lt;/li&gt; &lt;li&gt;博主 Github 地址:&lt;a href=&#34;https://github.com/spygg&#34; target=&#34;_blank&#34;&gt;https://github.com/spygg&lt;/a&gt;&lt;/li&gt; &lt;li&gt;我的CSDN:&lt;a href=&#34;https://blog.csdn.net/spygg&#34; target=&#34;_blank&#34;&gt;https://blog.csdn.net/spygg&lt;/a&gt;&lt;/li&gt; &lt;li&gt;联系邮箱：liushidc@163.com&lt;/li&gt; &lt;/ul&gt;</div>
   	  	
     	</section>
     
