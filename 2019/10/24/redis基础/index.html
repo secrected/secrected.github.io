@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://wecret.github.io">
   <title>redis基础 | secret</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="—REmote DIctionary Server  分布式数据库中CAP原理：C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。因此，根据 CAP 原理将 NoSQL 分成三大类：  CA - 单点集群，">
+  <meta name="description" content="—REmote DIctionary Server  分布式数据库中CAP原理：C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。">
 <meta name="keywords" content="redis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="redis基础">
 <meta property="og:url" content="http:&#x2F;&#x2F;wecret.github.io&#x2F;2019&#x2F;10&#x2F;24&#x2F;redis%E5%9F%BA%E7%A1%80&#x2F;index.html">
 <meta property="og:site_name" content="secret">
-<meta property="og:description" content="—REmote DIctionary Server  分布式数据库中CAP原理：C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。因此，根据 CAP 原理将 NoSQL 分成三大类：  CA - 单点集群，">
+<meta property="og:description" content="—REmote DIctionary Server  分布式数据库中CAP原理：C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）一个分布式系统不可能同时很好的满足一致性，可用性和分区容错性这三个需求，最多只能同时较好的满足两个。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-23T15:48:34.689Z">
+<meta property="og:updated_time" content="2019-10-23T15:57:48.894Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="secret" type="application/atom+xml">
@@ -64,11 +64,7 @@
 	        
 				<li><a href="/categories">文章分类</a></li>
 	        
-				<li><a href="/tags">标签</a></li>
-	        
 				<li><a href="/photos">相册</a></li>
-	        
-				<li><a href="/timeline">时间轴</a></li>
 	        
 				<li><a href="/about">关于</a></li>
 	        
@@ -81,7 +77,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">相关链接</a>
     			
             
 		</nav>
@@ -89,6 +85,12 @@
 			<div class="social">
 				
 					<a class="github" target="_blank" href="https://github.com/wecret/" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="qq" target="_blank" href="/img/qq169.png" title="qq"><i class="icon-qq"></i></a>
+		        
+					<a class="weixin" target="_blank" href="/img/weixin.png" title="weixin"><i class="icon-weixin"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:secret11979@sina.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -126,16 +128,18 @@
 			
 				
 			
-				
-			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/wecret/" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="qq" target="_blank" href="/img/qq169.png" title="qq"><i class="icon-qq"></i></a>
+			        
+						<a class="weixin" target="_blank" href="/img/weixin.png" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:secret11979@sina.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -144,19 +148,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 14.285714285714286%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 14.285714285714286%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 20%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 14.285714285714286%"><a href="/categories">文章分类</a></li>
+					<li style="width: 20%"><a href="/categories">文章分类</a></li>
 		        
-					<li style="width: 14.285714285714286%"><a href="/tags">标签</a></li>
+					<li style="width: 20%"><a href="/photos">相册</a></li>
 		        
-					<li style="width: 14.285714285714286%"><a href="/photos">相册</a></li>
-		        
-					<li style="width: 14.285714285714286%"><a href="/timeline">时间轴</a></li>
-		        
-					<li style="width: 14.285714285714286%"><a href="/about">关于</a></li>
+					<li style="width: 20%"><a href="/about">关于</a></li>
 		        
 				</ul>
 			</nav>
@@ -204,16 +204,16 @@
         <blockquote>
 <p>—REmote DIctionary Server</p>
 </blockquote>
-<h4 id="分布式数据库中CAP原理："><a href="#分布式数据库中CAP原理：" class="headerlink" title="分布式数据库中CAP原理："></a>分布式数据库中CAP原理：</h4><p>C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）<br>一个分布式系统不可能同时很好的<code>满足一致性</code>，<code>可用性</code>和<code>分区容错性</code>这三个需求，最多只能同时较好的满足两个。<br>因此，根据 CAP 原理将 NoSQL 分成三大类：</p>
+<h4 id="分布式数据库中CAP原理："><a href="#分布式数据库中CAP原理：" class="headerlink" title="分布式数据库中CAP原理："></a>分布式数据库中CAP原理：</h4><p>C:Consistency（强一致性）    A:Availability（可用性） P:Partition tolerance（分区容错性）<br>一个分布式系统不可能同时很好的<code>满足一致性</code>，<code>可用性</code>和<code>分区容错性</code>这三个需求，最多只能同时较好的满足两个。<br>  <a id="more"></a><br>因此，根据 CAP 原理将 NoSQL 分成三大类：</p>
 <ul>
 <li><p>CA - 单点集群，满足一致性，可用性的系统，通常在可扩展性上不太强大。</p>
 </li>
 <li><p>CP - 满足一致性，分区容忍必的系统，通常性能不是特别高。 Redis、Mongodb</p>
 </li>
 <li><p>AP - 满足可用性，分区容忍性的系统，通常可能对一致性要求低一些。大多数web应用<br>一致性和可用性之间取一个平衡。多余大多数web应用，其实并不需要强一致性。因此牺牲C换取P，这是目前分布式数据库产品的方向</p>
-<a id="more"></a>
-
-<h4 id="NoSQL四大分类："><a href="#NoSQL四大分类：" class="headerlink" title="NoSQL四大分类："></a>NoSQL四大分类：</h4></li>
+</li>
+</ul>
+<h4 id="NoSQL四大分类："><a href="#NoSQL四大分类：" class="headerlink" title="NoSQL四大分类："></a>NoSQL四大分类：</h4><ul>
 <li><p>KV键值—memcache+redis</p>
 </li>
 <li><p>文档型数据库(bson格式)</p>
@@ -439,9 +439,18 @@ numTestsPerEvictionRun=-1 </code></pre>
   
 <nav id="article-nav">
   
+    <a href="/2019/10/24/todo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          todo
+        
+      </div>
+    </a>
   
-    <a href="/2018/10/24/HelloWorld/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">begin</div>
+  
+    <a href="/2019/10/06/Nginx/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Nginx</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -607,7 +616,7 @@ MathJax.Hub.Queue(function() {
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">相关链接</a></li>
       
         
     </ul>
@@ -632,19 +641,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">科普</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">猿工</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">原创</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">抢票</a>
               </li>
             
             <div class="clearfix"></div>
@@ -696,7 +709,11 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://www.jianshu.com/p/efebead840b2" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>hexo-theme搭建博客</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://zhousiwei.gitee.io/2019/07/25/hexo%E4%B8%BB%E9%A2%98%E4%B9%8Bhexo-theme-yilia-plus/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>hexo-theme-yilia-plus主题配置</a>
             </li>
           
         </ul>
