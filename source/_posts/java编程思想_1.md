@@ -1,5 +1,5 @@
 ---
-title: thinking in java
+title: java编程思想（一）
 date: 2019-08-25 13:33:42
 categories: [Java,bookNotes,thinking in java]
 tags: java
