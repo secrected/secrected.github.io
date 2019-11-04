@@ -1,12 +1,13 @@
 ---
-title: xixi
+title: Surprise
 date: 2019-10-24 15:33:49
 categories: [life]
 tags: life
 top: 10
+comments: false
 ---
 
-点开有惊喜！！！👇👇👇👇
+点开送惊喜！！！🤞🤞🤞🤞🤞
   <!--more-->
   
 <div>
@@ -20,10 +21,10 @@ top: 10
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <meta name="keywords" content="祝 1024 暴富！">
-  <meta name="description" content="祝 1024 暴富！">
+  <meta name="keywords" content="暴富！">
+  <meta name="description" content="暴富！">
 
-  <title>祝 1024 暴富！</title>
+  <title>暴富！</title>
   <style>
     body {
       margin: 0;
@@ -47,7 +48,7 @@ top: 10
   <script>
     var info = document.createElement("div");
     info.style = 'top:0;position: absolute;width: 100%;font-family: monospace;text-align: center;z-index: 99999999999999999;background: #ccc;height: 100%;'
-    info.innerHTML = '<div style="top:0;position: absolute;z-index:999999;width:100%;text-align:center;background:rgba(0,0,0,0.2);color:#fff;line-height: 1rem;"><h1>祝 1024 暴富！</h1></div>';
+    info.innerHTML = '<div style="top:0;position: absolute;z-index:999999;width:100%;text-align:center;background:rgba(0,0,0,0.2);color:#fff;line-height: 1rem;"><h1>何以解忧，唯有暴富！</h1></div>';
     document.body.appendChild(info);
     var canvas = document.createElement("canvas");
     canvas.style = 'position: absolute;left: 0;top:0'
