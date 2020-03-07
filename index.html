@@ -269,6 +269,185 @@
 
 
   
+    <article id="post-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/24/1/">SpringCloud</a>
+    </h1>
+  
+
+        <!--显示阅读次数-->
+        
+        
+        <a href="/2019/10/24/1/" class="archive-article-date">
+  	<time datetime="2019-10-24T07:33:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="一、微服务概述"><a href="#一、微服务概述" class="headerlink" title="一、微服务概述"></a>一、微服务概述</h5><p>目前业界没有统一标准的定义，通常而言，<code>微服务架构</code>是一种架构模式或一种架构风格，提倡<code>将单一应用程序划分成一组小的服务</code>，每个服务运行在其独立的自己的<code>进程</code>中。服务之间采用轻量级的通信机制进行沟通（本质区别，cloud基于HTTP的RESTful API，dubbo基于RPC），每个服务独立部署发布，可以用不同语言编写服务。</p>
+<p><code>微服务</code>强调的是服务的大小，一个个的个体，一个服务应用</p>
+<p><strong>技术纬度理解：</strong>微服务核心就是将传统一站式应用根据<code>业务</code>拆分成一个个的服务，彻底去耦合，一个微服务提供单个业务功能的服务且只做一件事（如发短信，下订单），小而独立的处理过程，类似进程，</p>
+<p>分布式：专业的事交给专业的人做，尽量降低耦合度</p>
+<p>微服务技术栈：</p>
+<table>
+<thead>
+<tr>
+<th>条目</th>
+<th>技术</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>服务开发</td>
+<td>Springboot、Spring、SpringMVC</td>
+</tr>
+<tr>
+<td>服务配置与管理</td>
+<td>Netflix公司的Archaius、阿里的Diamond</td>
+</tr>
+<tr>
+<td>服务注册与发现</td>
+<td>EureKa、Consul、Zookeeper</td>
+</tr>
+<tr>
+<td>服务调用</td>
+<td>Rpc、Rest、gRpc</td>
+</tr>
+<tr>
+<td>服务熔断器</td>
+<td>Hhystrix、Envoy</td>
+</tr>
+<tr>
+<td>负载均衡</td>
+<td>Ribbon、Nginx</td>
+</tr>
+<tr>
+<td>服务接口调用</td>
+<td>Feign</td>
+</tr>
+<tr>
+<td>消息队列</td>
+<td>Kafka、RabbitMQ、ActiveMQ</td>
+</tr>
+<tr>
+<td>服务配置中心管理</td>
+<td>SpringCloudConfig、Chef</td>
+</tr>
+<tr>
+<td>服务路由（API网关）</td>
+<td>Zuul</td>
+</tr>
+<tr>
+<td>服务监控</td>
+<td>Zabbix、Nagions、Metrics</td>
+</tr>
+<tr>
+<td>全链路追踪</td>
+<td>Zipkin、Brave</td>
+</tr>
+<tr>
+<td>服务部署</td>
+<td>Docker、OpenStack</td>
+</tr>
+<tr>
+<td>数据流操作开发包</td>
+<td>SpringCloud Stream</td>
+</tr>
+<tr>
+<td>事件消息总栈</td>
+<td>SpringCloud Sus</td>
+</tr>
+<tr>
+<td>….</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="二、SpringCloud"><a href="#二、SpringCloud" class="headerlink" title="二、SpringCloud"></a>二、SpringCloud</h5><blockquote>
+<p>微服务全家桶，基于springboot提供了一套微服务解决方案，各个微服务架构落地技术的集合体。</p>
+</blockquote>
+<p><code>区别</code>：springboot专注于快速方便开发单个微服务个体，springcloud依赖于springboot，关注全局服务治理框架</p>
+<p>与dubbo区别：</p>
+<p><img src="/Users/secret/Desktop/person/git/io/wecret.github.io/source/pho/article/du_cloud.png" alt=""></p>
+<p>最大区别：cloud抛弃了dubbo的rpc通信，采用基于http的rest方式，功能区别，社区支持和更新力度区别。</p>
+
+      
+
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">springCloud</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Java/stuNotes//" class="article-tag-list-link color4">stuNotes</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/24/1/">read more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-redis基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -980,7 +1159,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 secret - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16022690号</a>
+    		&copy; 2020 secret - <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备16022690号</a>
     	</div>
       	<div class="footer-right">
       		may end up with someone like you
@@ -1107,6 +1286,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">springCloud</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
@@ -1119,11 +1302,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">抢票</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
+                <a href="javascript:void(0)" class="js-tag color3">抢票</a>
               </li>
             
             <div class="clearfix"></div>
